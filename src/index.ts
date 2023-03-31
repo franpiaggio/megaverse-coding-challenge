@@ -1,8 +1,7 @@
 import express from "express";
 
-import { generateCleanGrid, generateCross } from "./generators";
 import { makeCrossPlanets, cleanMegaVerse, getBaseGrid, createMegaverseLogo } from "./actions";
-import { GRID_SIZE, Megaverse, OFFSET_CROSS } from "./common";
+import { GRID_SIZE, Megaverse, OFFSET_CROSS, generateCleanGrid, generateCross } from "./common";
 import dotenv from "dotenv";
 import { AxiosResponse } from "axios";
 

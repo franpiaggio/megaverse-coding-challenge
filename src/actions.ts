@@ -7,6 +7,7 @@ export async function getBaseGrid(): Promise<AxiosResponse> {
   return get(url);
 }
 
+// Phase 1
 export async function makeCrossPlanets(megaverse: Megaverse, char: string) {
   for (let row = 0; row < megaverse.length; row++) {
     for (let col = 0; col < megaverse[row].length; col++) {
@@ -50,9 +51,11 @@ function getItemData(item: string) {
       url: "polyanets",
     };
   }
+
   return data;
 }
 
+// Phase 2
 export async function createMegaverseLogo(megaverse: Megaverse) {
   for (let row = 0; row < megaverse.length; row++) {
     for (let col = 0; col < megaverse[row].length; col++) {
@@ -62,7 +65,7 @@ export async function createMegaverseLogo(megaverse: Megaverse) {
         await makeDelayedRequest(post, `${API_URL}/${itemData.url}`, payload);
         console.log(payload);
       } else {
-        console.log("space");
+        console.log("Space");
       }
     }
   }
