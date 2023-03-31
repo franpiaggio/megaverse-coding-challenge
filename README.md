@@ -2,6 +2,8 @@
 
 [Crossmint Documentation](https://challenge.crossmint.io/documentation)
 
+# Notes on the development
+
 ## Approach
 
 - I focused on solving the problem using Javascript without relying heavily on any frameworks or libraries.
@@ -10,17 +12,19 @@
 
 ## Time Frame
 
-It took me about four hours to complete this challenge.
+It took me about four three to complete this challenge.
 
 ## Further Improvements
 
-- One issue I encountered during the challenge was receiving "Too many requests" error messages. To work around this issue, I added a delay between each request. If there is a better solution to this problem, I was not able to find it quickly and had to look for it in the documentation.
+- I'm not sure if the exercise was intended to involve so many requests. It seemed a bit unusual to me. Initially, I attempted to verify if the endpoints could receive multiple rows and columns to minimize the number of requests, but I was unable to make it work, so I took this approach instead.
 
-- Ideally, I would have liked to edit the grid using more extensive parameters, but given the time, I believe I made the most of what I had.
+- One issue I encountered executing the reuqest was receiving "Too many requests" error messages. To work around this, I added a delay between each request. If there is a better solution to this problem, I was not able to find it quickly and had to look for it in the documentation.
+
+- I would have liked to have an endpoint or some way to check the current state of the grid. Perhaps there was a way to do this that I missed, but I developed a "clean" endpoint to clear the entire grid in case of any errors.
 
 # Acknowledgments
 
-I would like to thank for providing me with this interesting challenge. Additionally, I appreciate the opportunity to have been able to work on the challenge directly.
+I would like to thank to Penelope Cline for providing me with this interesting challenge. Additionally, I appreciate the opportunity to have been able to work on the challenge directly.
 
 ## Local development
 
