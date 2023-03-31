@@ -12,7 +12,7 @@
 
 ## Time Frame
 
-It took me about four three to complete this challenge.
+It took me about three hours to complete this challenge.
 
 ## Further Improvements
 
